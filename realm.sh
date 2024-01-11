@@ -4,7 +4,7 @@ systemctl disable realm
 rm /etc/systemd/system/realm.service -f
 systemctl daemon-reload
 systemctl reset-failed
-rm /opt/realm/realm
+rm -rf /opt/realm
 mkdir -p /opt/realm
 cd /opt/realm
 uname -m | grep -qi x86_64 && oarch=x86_64-unknown-linux-gnu || oarch=aarch64-unknown-linux-gnu;

@@ -13,6 +13,6 @@ tar -xzvf ./realm*.tar.gz
 chmod +x ./realm
 wget --no-check-certificate -P /etc/systemd/system https://raw.githubusercontent.com/FrankLiangCN/Realm/main/realm.service
 wget --no-check-certificate -P /opt/realm https://raw.githubusercontent.com/FrankLiangCN/Realm/main/config.toml
-cd ..
+cd /root
 systemctl start realm
 systemctl enable realm

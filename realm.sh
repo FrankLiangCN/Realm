@@ -11,8 +11,8 @@ uname -m | grep -qi x86_64 && oarch=x86_64-unknown-linux-gnu || oarch=aarch64-un
 wget "$(curl -s https://api.github.com/repos/zhboner/realm/releases/latest|grep -i "browser_download_url.*${oarch}"|grep -i "gnu.tar.gz"|awk -F '"' '{print $(NF-1)}')";
 tar -xzvf ./realm*.tar.gz
 chmod +x ./realm
-wget --no-check-certificate -O /etc/systemd/system https://raw.githubusercontent.com/FrankLiangCN/Realm/main/realm.service
-wget --no-check-certificate -O /opt/realm https://raw.githubusercontent.com/FrankLiangCN/GOST/main/config.toml
+wget --no-check-certificate -P /etc/systemd/system https://raw.githubusercontent.com/FrankLiangCN/Realm/main/realm.service
+wget --no-check-certificate -P /opt/realm https://raw.githubusercontent.com/FrankLiangCN/Realm/main/config.toml
 cd ..
 systemctl start realm
 systemctl enable realm

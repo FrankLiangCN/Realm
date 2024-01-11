@@ -3,5 +3,9 @@ no_tcp = false
 use_udp = true
 
 [[endpoints]]
-listen = "0.0.0.0:1111"
-remote = "8.8.8.8:8888"
+listen = "0.0.0.0:5000"
+remote = "1.1.1.1:443"
+
+[[endpoints]]
+listen = "0.0.0.0:10000"
+remote = "www.google.com:443"

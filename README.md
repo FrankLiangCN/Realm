@@ -11,3 +11,10 @@ wget -qO- https://raw.githubusercontent.com/FrankLiangCN/Realm/main/realm.sh | b
 
 重启 realm 服务
 systemctl restart realm
+
+
+[@zhboner/realm][realm]
+
+
+[realm]: https://github.com/zhboner/realm
+

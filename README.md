@@ -4,7 +4,7 @@ A network relay tool
 ### 一键脚本命令：
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/FrankLiangCN/Realm/main/realm.sh)
+bash <(curl -sSL https://raw.githubusercontent.com/FrankLiangCN/Realm/main/realm.sh)
 ```
 ### 或者
 ```
